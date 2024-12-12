@@ -3,27 +3,35 @@ import axios from "axios";
 import "./HomePage.css";
 
 const HomePage = () => {
-  
   const [cars, setCars] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortType, setSortType] = useState("");
   const [showFilters, setShowFilters] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   const itemsPerPage = 20;
 
+  // API'den veriyi çek
   async function fetchCars() {
     try {
+      setIsLoading(true);
       const response = await axios.get("/api/arabalar");
-      console.log(response.data);
-      setCars(response.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
+      if (Array.isArray(response.data)) {
+        setCars(response.data);
+      } else {
+        console.error("API yanıtı beklenen formatta değil.", response.data);
+        setError("Beklenmeyen veri formatı.");
+      }
+    } catch (err) {
+      console.error("Veri çekme hatası:", err);
+      setError("Veri çekilirken bir hata oluştu.");
+    } finally {
+      setIsLoading(false);
     }
   }
-  
-  // JSON verilerini çek
+
   useEffect(() => {
-    
     fetchCars();
   }, []);
 
@@ -39,26 +47,28 @@ const HomePage = () => {
     setShowFilters((prevShowFilters) => !prevShowFilters);
   };
 
-  const filteredCars = cars
-    .filter(
-      (car) =>
-        car.marka.toLowerCase().includes(searchTerm) ||
-        car.model.toLowerCase().includes(searchTerm)
-    )
-    .sort((a, b) => {
-      switch (sortType) {
-        case "marka":
-          return a.marka.localeCompare(b.marka);
-        case "fiyat":
-          return b.fiyat - a.fiyat;
-        case "tork":
-          return b.tork - a.tork;
-        case "yıl":
-          return b.yıl - a.yıl;
-        default:
-          return 0;
-      }
-    });
+  const filteredCars = Array.isArray(cars)
+    ? cars
+        .filter(
+          (car) =>
+            car.marka.toLowerCase().includes(searchTerm) ||
+            car.model.toLowerCase().includes(searchTerm)
+        )
+        .sort((a, b) => {
+          switch (sortType) {
+            case "marka":
+              return a.marka.localeCompare(b.marka);
+            case "fiyat":
+              return b.fiyat - a.fiyat;
+            case "tork":
+              return b.tork - a.tork;
+            case "yıl":
+              return b.yıl - a.yıl;
+            default:
+              return 0;
+          }
+        })
+    : [];
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -72,17 +82,20 @@ const HomePage = () => {
     setCurrentPage((prev) => prev - 1);
   };
 
+  if (isLoading) {
+    return <div>Veriler yükleniyor...</div>;
+  }
+
+  if (error) {
+    return <div>Hata: {error}</div>;
+  }
+
   return (
     <div className="home-page">
-      <div>
-        
-      </div>
-
-      {/* Arama ve Filtreleme alanı */}
       <div className="table-header">
         <input
           type="text"
-          placeholder="Marka veya Model ??"
+          placeholder="Marka veya Model ara..."
           value={searchTerm}
           onChange={handleSearch}
           className="search-input"
@@ -102,7 +115,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Tablo */}
       <table>
         <thead>
           <tr>
@@ -128,12 +140,8 @@ const HomePage = () => {
         </tbody>
       </table>
 
-      {/* Sayfa Kontrol Butonları */}
       <div className="pagination">
-        <button
-          onClick={handlePreviousPage}
-          disabled={currentPage === 1}
-        >
+        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
           Geri
         </button>
         <button
