@@ -1,0 +1,37 @@
+.footer {
+  background: linear-gradient(to right, #333, #444);
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-github {
+  height: 40px;
+  width: 100px;
+}
+
+.footer-logo:hover {
+  transform: scale(1.2);
+}
+
+.gif {
+  height: 40px;
+  width: 40px;
+}

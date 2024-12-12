@@ -1,0 +1,13 @@
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #00837d, #cbf4f2);
+}
+
+.animation-gif {
+  max-width: 80%;
+  height: auto;
+}

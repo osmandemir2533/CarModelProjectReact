@@ -1,0 +1,69 @@
+.contact-page {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: justify;
+}
+
+.contact-page h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.contact-page h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-page p {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-logo {
+  height: 135px;
+  width: 135px;
+  transition: transform 0.3s ease;
+}
+.social-logo-git {
+  height: 135px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.3);
+}
+
+.social-logo-git:hover {
+  transform: scale(1.3);
+}
+
+.gif { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 150px;
+  margin-bottom: 80px;
+  transform: translate(+1800%, -300%);
+}
+
+.gif img { 
+  max-width: 400px;
+  height: auto; 
+  display: block;
+  margin: auto;
+}
+

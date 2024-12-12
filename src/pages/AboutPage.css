@@ -1,0 +1,39 @@
+.about-page {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: justify;
+}
+
+.about-page h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.about-page h2 {
+  color: #d9534f;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-page p {
+  line-height: 1.6;
+}
+
+.about-page ul {
+  list-style: disc inside;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.aligned-list li {
+  text-align: center;
+}
+
+.about-page ul ul {
+  list-style: circle;
+  margin-left: 20px;
+  padding-left: 0;
+}
