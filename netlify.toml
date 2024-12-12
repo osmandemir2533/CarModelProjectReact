@@ -1,0 +1,4 @@
+[build]
+  # Yayınlamak istediğiniz dizin
+  publish = "dist" # Vite build çıktısı burada olacaktır.
+  command = "npm run build"  # Build komutunu çalıştıran komut
