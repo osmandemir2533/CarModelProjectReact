@@ -12,28 +12,26 @@ const HomePage = () => {
   const [error, setError] = useState(null);
   const itemsPerPage = 20;
 
-  // API'den veriyi çek
-  async function fetchCars() {
-    try {
-      setIsLoading(true);
-      const response = await axios.get("/api/arabalar");
-      if (Array.isArray(response.data)) {
-        setCars(response.data);
-      } else {
-        console.error("API yanıtı beklenen formatta değil.", response.data);
-        setError("Beklenmeyen veri formatı.");
-      }
-    } catch (err) {
-      console.error("Veri çekme hatası:", err);
-      setError("Veri çekilirken bir hata oluştu.");
-    } finally {
-      setIsLoading(false);
-    }
-  }
-
   useEffect(() => {
+    const fetchCars = async () => {
+      try {
+        const response = await axios.get("https://carjsondata.onrender.com/arabalar");
+        if (typeof response.data === "object" && Array.isArray(response.data)) {
+          console.log(response.data)
+          setCars(response.data);
+        } else {
+          console.error("Beklenmeyen veri formatı:", response.data);
+        }
+      } catch (error) {
+        console.error("Hata:", error);
+      }
+    };
+  
     fetchCars();
   }, []);
+  
+
+
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
