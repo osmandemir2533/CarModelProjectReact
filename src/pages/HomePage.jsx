@@ -16,6 +16,7 @@ const HomePage = () => {
     axios
       .get("https://project-data-1-ex9g.onrender.com/get")
       .then((response) => setCars(response.data))
+      console.log(response.data)
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
