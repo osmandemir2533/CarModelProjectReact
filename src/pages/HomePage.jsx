@@ -11,13 +11,20 @@ const HomePage = () => {
   const [showFilters, setShowFilters] = useState(false);
   const itemsPerPage = 20;
 
+  async function fetchCars() {
+    try {
+      const response = await axios.get("/api/arabalar");
+      console.log(response.data);
+      setCars(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+  
   // JSON verilerini çek
   useEffect(() => {
-    axios
-      .get("/api/arabalar")
-      .then((response) => setCars(response.data))
-      console.log(response.data)
-      .catch((error) => console.error("Error fetching data:", error));
+    
+    fetchCars();
   }, []);
 
   const handleSearch = (e) => {
