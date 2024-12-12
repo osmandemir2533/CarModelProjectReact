@@ -1,4 +1,8 @@
 [build]
-  # Yayınlamak istediğiniz dizin
-  publish = "dist" # Vite build çıktısı burada olacaktır.
-  command = "npm run build"  # Build komutunu çalıştıran komut
+  publish = "dist" # Build çıktısı
+  command = "npm run build"  # Build komutu
+
+[[redirects]]
+  from = "/api/*"  # Tüm /api/ ile başlayan istekler
+  to = "https://carjsondata.onrender.com/:splat"  # Gerçek API adresine yönlendirilir
+  status = 200  # Proxy olarak çalıştır

@@ -14,7 +14,7 @@ const HomePage = () => {
   // JSON verilerini çek
   useEffect(() => {
     axios
-      .get("https://carjsondata.onrender.com/arabalar")
+      .get("/api/arabalar")
       .then((response) => setCars(response.data))
       console.log(response.data)
       .catch((error) => console.error("Error fetching data:", error));
