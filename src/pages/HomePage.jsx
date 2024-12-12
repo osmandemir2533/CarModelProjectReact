@@ -14,24 +14,25 @@ const HomePage = () => {
 
   useEffect(() => {
     const fetchCars = async () => {
+      setIsLoading(true); // Veri yüklenmeye başlıyor
       try {
         const response = await axios.get("https://carjsondata.onrender.com/arabalar");
-        if (typeof response.data === "object" && Array.isArray(response.data)) {
-          console.log(response.data)
+        if (Array.isArray(response.data)) {
           setCars(response.data);
         } else {
           console.error("Beklenmeyen veri formatı:", response.data);
+          setError("Veri formatı hatalı");
         }
       } catch (error) {
         console.error("Hata:", error);
+        setError("Veri alırken hata oluştu");
+      } finally {
+        setIsLoading(false); // Yükleme tamamlandığında isLoading false
       }
     };
-  
+
     fetchCars();
   }, []);
-  
-
-
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
@@ -45,28 +46,26 @@ const HomePage = () => {
     setShowFilters((prevShowFilters) => !prevShowFilters);
   };
 
-  const filteredCars = Array.isArray(cars)
-    ? cars
-        .filter(
-          (car) =>
-            car.marka.toLowerCase().includes(searchTerm) ||
-            car.model.toLowerCase().includes(searchTerm)
-        )
-        .sort((a, b) => {
-          switch (sortType) {
-            case "marka":
-              return a.marka.localeCompare(b.marka);
-            case "fiyat":
-              return b.fiyat - a.fiyat;
-            case "tork":
-              return b.tork - a.tork;
-            case "yıl":
-              return b.yıl - a.yıl;
-            default:
-              return 0;
-          }
-        })
-    : [];
+  const filteredCars = cars
+    .filter(
+      (car) =>
+        car.marka.toLowerCase().includes(searchTerm) ||
+        car.model.toLowerCase().includes(searchTerm)
+    )
+    .sort((a, b) => {
+      switch (sortType) {
+        case "marka":
+          return a.marka.localeCompare(b.marka);
+        case "fiyat":
+          return b.fiyat - a.fiyat;
+        case "tork":
+          return b.tork - a.tork;
+        case "yıl":
+          return b.yıl - a.yıl;
+        default:
+          return 0;
+      }
+    });
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
