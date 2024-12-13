@@ -106,7 +106,7 @@
   .gif {
     margin-top: 80px;
     margin-bottom: 60px;
-    transform: translate(+100%, 0); /* Animasyonun etkisini kaldırdım */
+    transform: translate(0, 0); /* Animasyonun etkisini kaldırdım */
   }
 
   .gif img {
