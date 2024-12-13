@@ -106,14 +106,11 @@
   .gif {
     margin-top: 80px;
     margin-bottom: 60px;
-    /* Gif kısmının tamamen ortada olmasını sağlamak için */
-    width: 100%;
+    transform: translate(0, 0); /* Animasyonun etkisini kaldırdım */
   }
 
   .gif img {
     max-width: 300px;
-    /* gif'i tam ortalamak için margin:auto eklendi */
-    margin: 0 auto;
   }
 }
 
