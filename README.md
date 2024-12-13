@@ -6,8 +6,8 @@ Bu proje, kullanıcıların otomobil modelleri hakkında kapsamlı bilgiye kolay
 
 ## 🚗 Animasyon Ekranı
 
-Sitemizin daha eğlenceli ve kullanıcı dostu olmasını sağlamak için **özel bir animasyon ekranı** ekledik!  
-- Siteye girdiğinizde sizi hoş bir animasyon karşılıyor.  
+Sitemizin kullanıcı dostu olmasını sağlamak için **özel bir animasyon ekranı** ekledik!  
+- Siteye girdiğinizde sizi animasyon karşılıyor.  
 - Animasyon sonrasında, **anında ana sayfaya** yönlendirilirsiniz ve otomobil modellerini keşfetmeye başlayabilirsiniz.
 
 <img src="https://github.com/user-attachments/assets/aa762b16-781a-498b-98c8-09946890a2db" alt="Animation Screen" width="500"/>
@@ -114,7 +114,8 @@ Bu projeyi deploy etmek aslında oldukça zorlu bir süreçti sorunları çözü
 
 ### Render ve JSON Verileri
 Projede **Car.json** verilerini **Render** platformuna yükledim.  
-- **Render**, backend kısmını barındırmak için kullandım ve JSON server ile verileri sağladım.  
+- **Car.json** dosyasını önce [Car JSON Data](https://github.com/osmandemir2533/carjsondata) adlı ayrı bir repo olarak GitHub'a yükledim.
+- Ardından bu verileri **Render** platformuna aktardım ve JSON server kullanarak backend oluşturdum.
 - Böylece otomobil verileri, **Render'daki backend sunucusundan** dinamik olarak alınıp, frontend tarafına iletiliyor.
 
 ### Netlify ve Frontend
@@ -133,7 +134,7 @@ Bu şekilde **Netlify** ve **Render** kullanarak projeyi başarıyla yayına ald
 
 ---
 
-## 🌍 Canlı Site ve Diğer Projeler
+## 🌍 Web Site ve Diğer Projeler
 
 Proje şu an yayında ve erişebilirsiniz. **Ayrıca sürekli olmasada bazen renderden kaynaklı tablomdaki car.json verileri geç gelebiliyor bunun için biraz bekleyip f5 atmanızı öneririm**: 
 - [**CarModelProjectReact** - Netlify Deployed](https://osmandemirdelta-assessment.netlify.app)
