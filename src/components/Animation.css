@@ -11,3 +11,25 @@
   max-width: 80%;
   height: auto;
 }
+
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  .animation-container {
+    height: 80vh; /* Mobilde daha küçük bir yüksekliğe sahip olacak şekilde ayarlandı */
+  }
+
+  .animation-gif {
+    max-width: 90%; /* Görüntünün mobilde daha büyük görünmesi için genişliği %90 yapıldı */
+  }
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  .animation-container {
+    height: 70vh; /* Küçük ekranlarda daha da küçültüldü */
+  }
+
+  .animation-gif {
+    max-width: 100%; /* Telefonlarda görsel tam genişlik alacak şekilde ayarlandı */
+  }
+}

@@ -122,3 +122,77 @@ table tr:hover {
   background-color: #cccccc;
   cursor: not-allowed;
 }
+
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  table th, table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .filter-button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .filter-options {
+    width: 100%;
+    position: static;
+    box-shadow: none;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .pagination button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  table th, table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .table-header {
+    width: 100%;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .filter-button {
+    font-size: 14px;
+  }
+
+  .pagination button {
+    font-size: 14px;
+  }
+}

@@ -1,19 +1,64 @@
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #00837d, #cbf4f2);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #00837d, #cbf4f2);
+  color: #333;
+}
 
-    color: #333;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Mobilde sayfa kenarlarında boşluk ekleyerek içeriği küçültüyoruz */
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    text-align: center;
-  }
-  
+
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 100%;
+    padding: 15px; /* Daha küçük ekranlar için padding küçültüldü */
   }
-  
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  body {
+    padding: 5px; /* Küçük ekranlarda daha küçük padding */
+  }
+
+  .container {
+    padding: 10px; /* Daha küçük cihazlarda padding daha da küçültüldü */
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1rem;
+  }
+}

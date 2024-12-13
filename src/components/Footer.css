@@ -35,3 +35,53 @@
   height: 40px;
   width: 40px;
 }
+
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer-logo-github {
+    height: 30px;
+    width: 80px;
+  }
+
+  .footer-social {
+    gap: 15px;
+  }
+
+  .footer-content {
+    margin-bottom: 5px;
+  }
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-logo {
+    height: 25px;
+    width: 25px;
+  }
+
+  .footer-logo-github {
+    height: 25px;
+    width: 60px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .footer-content {
+    margin-bottom: 5px;
+  }
+}

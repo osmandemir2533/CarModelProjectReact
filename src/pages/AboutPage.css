@@ -37,3 +37,56 @@
   margin-left: 20px;
   padding-left: 0;
 }
+
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 15px;
+  }
+
+  .about-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+
+  .about-page p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .about-page ul {
+    margin-left: 15px;
+  }
+
+  .aligned-list li {
+    text-align: left; /* Liste öğelerini sola hizala */
+  }
+
+  .about-page ul ul {
+    margin-left: 10px;
+  }
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  .about-page h1 {
+    font-size: 1.2rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.1rem;
+  }
+
+  .about-page p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .about-page ul {
+    margin-left: 10px;
+  }
+}

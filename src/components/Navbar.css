@@ -1,41 +1,74 @@
 .custom-navbar {
-    background: linear-gradient(to right, #333, #444);
-    padding: 5px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, #333, #444);
+  padding: 5px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand:hover {
+  color: #cf610e;
+  transform: scale(1.2);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #cf610e;
+  transform: scale(1.3);
+}
+
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
-  .navbar-brand:hover {
-    color: #cf610e;
-    transform: scale(1.2);
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
   .nav-link {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 10px 0;
+    font-size: 16px;
   }
-  
-  .nav-link:hover {
-    color: #cf610e;
-    transform: scale(1.3);
+
+  .navbar-brand {
+    font-size: 22px;
   }
-  
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  .custom-navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+}

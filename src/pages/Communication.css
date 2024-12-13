@@ -37,6 +37,7 @@
   width: 135px;
   transition: transform 0.3s ease;
 }
+
 .social-logo-git {
   height: 135px;
   width: 300px;
@@ -67,3 +68,78 @@
   margin: auto;
 }
 
+/* Mobil için düzenlemeler */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 15px;
+  }
+
+  .contact-page h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-page p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .social-links {
+    flex-wrap: wrap; /* Sosyal medya ikonlarını satır satır düzenle */
+    gap: 10px;
+  }
+
+  .social-logo {
+    height: 100px;
+    width: 100px;
+  }
+
+  .social-logo-git {
+    height: 100px;
+    width: 230px;
+  }
+
+  .gif {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    transform: translate(0, 0); /* Animasyonun etkisini kaldırdım */
+  }
+
+  .gif img {
+    max-width: 300px;
+  }
+}
+
+/* Daha küçük mobil cihazlar için (özellikle telefonlar) */
+@media (max-width: 480px) {
+  .contact-page h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-page h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-page p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .social-logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .social-logo-git {
+    height: 80px;
+    width: 180px;
+  }
+
+  .gif img {
+    max-width: 250px;
+  }
+}
