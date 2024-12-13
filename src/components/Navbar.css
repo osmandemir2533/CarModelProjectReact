@@ -42,14 +42,23 @@
 /* Mobil için düzenlemeler */
 @media (max-width: 768px) {
   .navbar-nav {
-    display: block;
-    width: 100%;
-    text-align: center;
+    display: flex; /* Yanyana hizalamak için flex kullanıyoruz */
+    justify-content: center; /* Ortalamak için */
+    gap: 20px; /* Linkler arasında boşluk bırakıyoruz */
+  }
+
+  .nav-link::after {
+    content: '|'; /* Aralarına | işareti ekliyoruz */
+    margin-left: 10px;
+  }
+
+  .nav-link:last-child::after {
+    content: ''; /* Son linkte | işareti olmasın */
   }
 
   .nav-link {
-    margin: 10px 0;
     font-size: 16px;
+    margin: 0;
   }
 
   .navbar-brand {
@@ -69,6 +78,6 @@
 
   .nav-link {
     font-size: 14px;
-    margin: 8px 0;
+    margin: 0 10px; /* Mobilde küçük boşluk */
   }
 }

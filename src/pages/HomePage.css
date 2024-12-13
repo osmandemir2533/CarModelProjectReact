@@ -141,14 +141,21 @@ table tr:hover {
     width: 100%;
   }
 
+  /* Arama kutusu ve filtre butonu yan yana */
+  .table-header {
+    display: flex;
+    justify-content: space-between; /* Aralarına boşluk bırakacak */
+    gap: 10px; /* Aralarındaki boşluk */
+  }
+
   .search-input {
-    width: 100%;
-    margin-bottom: 15px;
+    width: 70%; /* Arama kutusunun genişliğini %70 olarak ayarladım */
+    margin-bottom: 0;
   }
 
   .filter-button {
-    width: 100%;
-    margin-bottom: 15px;
+    width: 28%; /* Filtre butonunun genişliğini %28 olarak ayarladım */
+    margin-bottom: 0;
   }
 
   .filter-options {
