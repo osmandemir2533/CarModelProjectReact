@@ -103,6 +103,15 @@
     width: 230px;
   }
 
+  .gif {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    transform: translate(0, 0); /* Animasyonun etkisini kaldırdım */
+  }
+
+  .gif img {
+    max-width: 300px;
+  }
 }
 
 /* Daha küçük mobil cihazlar için (özellikle telefonlar) */
@@ -130,4 +139,7 @@
     width: 180px;
   }
 
+  .gif img {
+    max-width: 250px;
+  }
 }
