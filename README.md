@@ -135,7 +135,7 @@ Bu şekilde **Netlify** ve **Render** kullanarak projeyi başarıyla yayına ald
 
 ## 🌍 Canlı Site ve Diğer Projeler
 
-Proje şu an **Canlı** ve erişebilirsiniz. Ayrıca sürekli olmasada bazen renderden kaynaklı tablomdaki car.json verileri geç gelebiliyor bunun için biraz bekleyip f5 atmanızı öneririm: 
+Proje şu an yayında ve erişebilirsiniz. **Ayrıca sürekli olmasada bazen renderden kaynaklı tablomdaki car.json verileri geç gelebiliyor bunun için biraz bekleyip f5 atmanızı öneririm**: 
 - [**CarModelProjectReact** - Netlify Deployed](https://osmandemirdelta-assessment.netlify.app)
 
 Ayrıca aynı projenin **local host** versiyonunu başka bir repoda paylaştım. Eğer bu versiyonu denemek isterseniz, işte bağlantı:  
