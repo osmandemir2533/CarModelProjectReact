@@ -10,6 +10,9 @@ Sitemizin daha eğlenceli ve kullanıcı dostu olmasını sağlamak için **öze
 - Siteye girdiğinizde sizi hoş bir animasyon karşılıyor.  
 - Animasyon sonrasında, **anında ana sayfaya** yönlendirilirsiniz ve otomobil modellerini keşfetmeye başlayabilirsiniz.
 
+<img src="https://github.com/user-attachments/assets/aa762b16-781a-498b-98c8-09946890a2db" alt="Animation Screen" width="500"/>
+
+
 ---
 
 ## 🏠 Ana Sayfa ve Arama Fonksiyonu
@@ -18,9 +21,13 @@ Sitemizin daha eğlenceli ve kullanıcı dostu olmasını sağlamak için **öze
 Kullanıcı dostu, sade ve şık bir **ana sayfa tasarımı** yapıldı.  
 - Bu sayfa, kullanıcıların otomobil modellerini kolayca incelemelerini sağlayan bir **tablo** içeriyor.
 
+<img src="https://github.com/user-attachments/assets/9e0ee5f9-ece0-42bb-97af-f95a2c9f0df6" alt="Animation Screen" width="400"/>
+
 ### Arama Fonksiyonu
 Artık istediğiniz otomobil modelini bulmak çok kolay!  
 - **Marka veya model adıyla arama yapabileceğiniz bir fonksiyon** entegre edildi. Bu sayede, kullanıcılar istedikleri bilgiyi anında bulabiliyor.
+
+<img src="https://github.com/user-attachments/assets/1e52dbe4-78bd-4f00-a5d5-0e2b1876e576" alt="Animation Screen" width="400"/>
 
 ---
 
@@ -34,13 +41,39 @@ Artık istediğiniz otomobil modelini bulmak çok kolay!
 Filtreleme butonuna tıkladığınızda açılan seçeneklerle otomobil modellerinizi istediğiniz gibi sıralayın.  
 - Veriler, **büyükten küçüğe doğru sıralanır**, böylece en hızlı şekilde istediğiniz sonuca ulaşabilirsiniz.
 
+<img src="https://github.com/user-attachments/assets/e59adc1f-743b-4c62-8dcc-894f242633d7" alt="Animation Screen" width="400"/>
+
 ---
 
-## 📑 Sayfalandırma
+## 📄 Sayfalar
+
+Bu projede üç ana sayfa bulunmaktadır: **Ana Sayfa**, **Hakkımızda** ve **İletişim**. Her bir sayfa, kullanıcı deneyimini geliştirmek ve siteyi daha verimli hale getirmek amacıyla tasarlanmıştır. Aşağıda her bir sayfanın özelliklerine dair kısa açıklamalar bulabilirsiniz:
+
+### 🏠 **Ana Sayfa**
+Ana sayfa, kullanıcıların siteye girdiğinde ilk gördükleri araba ile ilgili bilgilerin yer aldığı tabloyu inceleyebilecekleri sayfadır.
+**Özellikler:**
+- **Arama fonksiyonu**: Marka veya model adıyla hızlı arama yapılabilir.  
+- **Filtreleme seçenekleri**: Otomobil modelleri fiyat, yıl, tork gibi kriterlere göre sıralanabilir.
+
+### ℹ️ **Hakkımızda**
+Hakkımızda sayfası, projeyle ilgili daha fazla bilgi edinmek isteyen kullanıcılar için hazırlanmıştır. Burada projenin amacı ve genel özellikleri hakkında bilgiler yer alır.
+
+<img src="https://github.com/user-attachments/assets/1f002fb2-2873-40a2-86df-22281741617a" alt="Animation Screen" width="400"/>
+
+### 📧 **İletişim**
+İletişim sayfası, kullanıcıların proje hakkında soru sormak veya geri bildirimde bulunmak için bizlere ulaşmalarını sağlar.
+
+<img src="https://github.com/user-attachments/assets/95b16670-0151-488d-9c07-b759611b819d" width="400"/>
+
+---
+
+## 📑 Sayfalandırma - İleri/Geri
 
 Büyük veri setlerinde gezinmek zor olabilir, değil mi?  
 - **Sayfa kontrol butonları** eklendi! Bu sayede arama sonuçlarını sayfa sayfa gezebilirsiniz.  
 - **Her sayfada 20 otomobil modeli** görüntülenir, böylece gezinti çok daha kolay ve keyifli hale gelir.
+
+<img src="https://github.com/user-attachments/assets/ec035137-41f7-47a3-9597-7877924bc215" width="400"/>
 
 ---
 
