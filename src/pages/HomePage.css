@@ -145,16 +145,16 @@ table tr:hover {
   .table-header {
     display: flex;
     justify-content: space-between; /* Aralarına boşluk bırakacak */
-    gap: 10px; /* Aralarındaki boşluk */
+    gap: 5px; /* Aralarındaki boşluk */
   }
 
   .search-input {
-    width: 70%; /* Arama kutusunun genişliğini %70 olarak ayarladım */
+    width: 55%; /* Arama kutusunun genişliğini %70 olarak ayarladım */
     margin-bottom: 0;
   }
 
   .filter-button {
-    width: 28%; /* Filtre butonunun genişliğini %28 olarak ayarladım */
+    width: 40%; /* Filtre butonunun genişliğini %28 olarak ayarladım */
     margin-bottom: 0;
   }
 

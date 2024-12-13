@@ -57,8 +57,13 @@
   }
 
   .nav-link {
+    display: flex; /* Yanyana hizalamak için flex kullanıyoruz */
+    justify-content: center; /* Ortalamak için */
     font-size: 16px;
     margin: 0;
+    gap: 20px; /* Linkler arasında boşluk bırakıyoruz */
+    content: '|'; /* Aralarına | işareti ekliyoruz */
+    margin-left: 10px;
   }
 
   .navbar-brand {
