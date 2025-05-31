@@ -147,7 +147,11 @@ Ayrıca aynı projenin **local host** versiyonunu başka bir repoda paylaştım.
 
 ---
 
-Bu projede yaptığım çalışmalarla ilgili başka sorularınız varsa, bana her zaman ulaşabilirsiniz!  
+## 📬 İletişim
 
+Bu projede yaptığım çalışmalarla ilgili başka sorularınız varsa, **Benimle her zaman iletişime geçebilirsiniz**:
 
-[![Email](https://img.icons8.com/ios-filled/50/FF0000/gmail.png)](mailto:osman25dem@gmail.com) &nbsp;&nbsp; [![LinkedIn](https://img.icons8.com/ios-filled/50/0A66C2/linkedin.png)](https://www.linkedin.com/in/osmandemir2533/)
+[![LinkedIn](https://img.icons8.com/ios-filled/50/0A66C2/linkedin.png)](https://www.linkedin.com/in/osmandemir2533/)  &nbsp;&nbsp; 
+[![Website](https://img.icons8.com/ios-filled/50/8e44ad/domain.png)](https://osmandemir2533.github.io/)
+
+---
